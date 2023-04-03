@@ -1,0 +1,107 @@
+html {
+	background-color: hsl(30, 38%, 92%);
+}
+
+* {
+	margin: 0;
+}
+
+.container {
+	flex-wrap: wrap;
+}
+
+.display {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	flex-wrap: wrap;
+}
+
+.pic {
+	max-width: 350px;
+  	height: auto;
+  	border-top-left-radius: 0.5rem;
+  	border-bottom-left-radius: 0.5rem;
+
+}
+
+.card {
+	background-color: hsl(0, 0%, 100%);
+	min-height: 461px;
+	min-width: 290px;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	padding: 2rem;
+	 border-top-right-radius: 0.5rem;
+  	border-bottom-right-radius: 0.5rem;
+}
+
+.perfume, .floral, .price {
+	font-family: 'Outfit', sans-serif;
+}
+
+.perfume, .floral, .second {
+	color: hsl(228, 12%, 48%);
+}
+
+.perfume {
+	letter-spacing: 0.5rem;
+	font-size: 0.8rem;
+}
+
+.gabrielle {
+	font-size: 2.55rem;
+	line-height: 2.5rem;
+}
+
+.floral {
+	line-height: 1.5rem;
+}
+
+.price {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+}
+
+.first {
+	font-family: 'Fraunces','serif;';
+	font-size: 2rem;
+	font-weight: 700;
+	color: hsl(158, 36%, 37%);
+}
+
+.second {
+	text-decoration: line-through;
+	font-size: 0.95rem;
+}
+
+.button {
+	border: none;
+	color: white;
+	background-color: hsl(158, 36%, 37%);
+	padding: 1rem 2rem;
+	font-weight: 700;
+	border-radius: 0.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+}
+
+.button:hover {
+ 	cursor: pointer;
+ 	background-color: hsl(158, 36%, 20%);
+}
+
+@media all and (max-width: 360px) {
+	.pic {
+	width: 550px;
+  	height: 300px;
+  	border-top-left-radius: 0.5rem;
+  	border-top-right-radius: 0.5rem;
+	}
+}
