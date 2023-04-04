@@ -98,10 +98,8 @@ html {
 }
 
 @media all and (max-width: 360px) {
-	.pic {
-	width: 550px;
-  	height: 300px;
-  	border-top-left-radius: 0.5rem;
-  	border-top-right-radius: 0.5rem;
+	.display {
+		display: flex;
+		flex-direction: column;
 	}
 }
